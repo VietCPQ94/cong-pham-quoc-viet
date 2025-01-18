@@ -1,0 +1,112 @@
+.app {
+  &_bg-1 {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100vw;
+    height: 40.625vw;
+    background: url(./assets/xmas-bg-dark.png) center center / cover no-repeat
+      fixed;
+  }
+
+  &_bg-2 {
+    position: absolute;
+    bottom: 5%;
+    left: 1%;
+    width: 26vw;
+    height: 15vw;
+    background: url(./assets/new-year-dark.png) center center / cover no-repeat;
+  }
+
+  &_snow {
+    position: fixed;
+    top: -2%;
+    z-index: 9999;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: rgb(0, 0, 0) 0px 0px 1px;
+    user-select: none;
+    cursor: default;
+    will-change: transform;
+    animation: 15s linear 0s infinite normal none running snowFalling;
+
+    &:nth-of-type(1) {
+      left: 1%;
+      animation-delay: 0s, 0s;
+    }
+
+    &:nth-of-type(2) {
+      left: 10%;
+      animation-delay: 1s, 1s;
+    }
+    &:nth-of-type(3) {
+      left: 20%;
+      animation-delay: 6s, 0.5s;
+    }
+    &:nth-of-type(4) {
+      left: 30%;
+      animation-delay: 4s, 2s;
+    }
+    &:nth-of-type(5) {
+      left: 40%;
+      animation-delay: 2s, 2s;
+    }
+    &:nth-of-type(6) {
+      left: 50%;
+      animation-delay: 8s, 3s;
+    }
+    &:nth-of-type(7) {
+      left: 60%;
+      animation-delay: 6s, 2s;
+    }
+    &:nth-of-type(8) {
+      left: 70%;
+      animation-delay: 2.5s, 1s;
+    }
+    &:nth-of-type(9) {
+      left: 80%;
+      animation-delay: 1s, 0s;
+    }
+    &:nth-of-type(10) {
+      left: 90%;
+      animation-delay: 3s, 1.5s;
+    }
+  }
+}
+
+@keyframes snowFalling {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  10% {
+    transform: translateY(10vh) translateX(27px);
+  }
+  20% {
+    transform: translateY(20vh) translateX(53px);
+  }
+  30% {
+    transform: translateY(30vh) translateX(80px);
+  }
+  40% {
+    transform: translateY(40vh) translateX(53px);
+  }
+  50% {
+    transform: translateY(50vh) translateX(27px);
+  }
+  60% {
+    transform: translateY(60vh) translateX(80px);
+  }
+  70% {
+    transform: translateY(70vh) translateX(0px);
+  }
+  80% {
+    transform: translateY(80vh) translateX(27px);
+  }
+  90% {
+    transform: translateY(90vh) translateX(53px);
+  }
+  100% {
+    transform: translateY(100vh) translateX(80px);
+  }
+}
